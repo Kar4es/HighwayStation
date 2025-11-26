@@ -70,7 +70,7 @@
 	var/datum/track/new_track = new()
 	new_track.song_name = name
 	new_track.song_length = length
-	new_track.song_beat = beat
+	new_track.song_beat_deciseconds = beat
 	new_track.song_path = file(file)
 
 	music_player.songs[name] = new_track
@@ -86,7 +86,7 @@
 		to_chat(user, span_warning("Сохранение трека было отключено."))
 		return
 
-	var/config_file = "[name]" + "+" + "[length]" + "+" + "[beat]"
+	var/config_file = "[name]+[beat]"
 	if(!fcopy(file, "[global.config.directory]/jukebox_music/sounds/[config_file].ogg"))
 		to_chat(user, span_warning("По какой-то причине, трек не был сохранён, попробуйте ещё раз. <br> Входной файл: [file] <br> Выходной файл: [config_file].ogg"))
 		return
