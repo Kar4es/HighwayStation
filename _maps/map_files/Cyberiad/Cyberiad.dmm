@@ -33920,6 +33920,10 @@
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
+"ill" = (
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/plating,
+/area/station/maintenance/ghetto/starboard)
 "ilm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -35481,7 +35485,6 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/obj/machinery/computer/security/telescreen/ordnance/directional/east,
 /turf/open/floor/iron,
 /area/station/science/ordnance/testlab)
 "iGp" = (
@@ -45493,8 +45496,7 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/obj/machinery/computer/security/telescreen/ordnance/directional/east,
-/obj/machinery/airalarm/directional/north,
+/obj/machinery/computer/security/telescreen/ordnance/directional/north,
 /turf/open/floor/iron,
 /area/station/science/ordnance/testlab)
 "lbS" = (
@@ -68482,7 +68484,6 @@
 /turf/open/floor/wood/large,
 /area/station/service/kitchen/abandoned)
 "qLi" = (
-/obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
 /obj/effect/spawner/random/maintenance/two,
@@ -77526,11 +77527,11 @@
 /area/station/maintenance/starboard/fore)
 "sXs" = (
 /obj/machinery/light/directional/west,
-/obj/machinery/firealarm/directional/west,
 /obj/structure/table,
 /obj/item/binoculars,
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/iron,
 /area/station/science/ordnance/testlab)
 "sXG" = (
@@ -94400,12 +94401,14 @@
 /area/station/maintenance/port/greater)
 "xgw" = (
 /obj/machinery/computer/pod/old/mass_driver_controller/ordnancedriver{
-	pixel_y = 24
+	pixel_y = 24;
+	pixel_x = 11
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/machinery/light_switch/directional/north{
 	pixel_x = -11
 	},
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron,
 /area/station/science/ordnance/testlab)
 "xgA" = (
@@ -144628,7 +144631,7 @@ stl
 gDo
 xjE
 rYk
-qTP
+ill
 naq
 hPY
 rYk
