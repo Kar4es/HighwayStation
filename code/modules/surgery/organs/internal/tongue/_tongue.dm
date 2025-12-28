@@ -187,6 +187,12 @@
 		new /regex(@"(\w)X", "g") = "$1KSSS",
 		new /regex(@"\bx([\-|r|R]|\b)", "g") = "ecks$1",
 		new /regex(@"\bX([\-|r|R]|\b)", "g") = "ECKS$1",
+		// BANDASTATION EDIT START - speech mod
+		new /regex("с+", "g") = "ссс",
+		new /regex("C+", "g") = "ССС",
+		new /regex("ч+", "g") = "щ",
+		new /regex("Ч+", "g") = "Щ",
+		// BANDASTATION END
 	)
 
 /obj/item/organ/tongue/lizard/Initialize(mapload)
@@ -397,6 +403,16 @@
 			continue
 		if(mothership == tongue.mothership)
 			to_chat(living_mob, rendered, type = MESSAGE_TYPE_RADIO, avoid_highlighting = user == living_mob)
+			// BANDASTATION ADDITION START - TTS
+			user.cast_tts(
+				living_mob,
+				message,
+				is_local = FALSE,
+				effects = list(/datum/singleton/sound_effect/telepathy),
+				channel_override = CHANNEL_TTS_TELEPATHY,
+				check_deafness = FALSE
+			)
+			// BANDASTATION ADDITION END
 
 	for(var/mob/dead_mob in GLOB.dead_mob_list)
 		var/link = FOLLOW_LINK(dead_mob, user)
@@ -579,11 +595,11 @@
 /obj/item/organ/tongue/snail/modify_speech(datum/source, list/speech_args)
 	var/new_message
 	var/message = speech_args[SPEECH_MESSAGE]
-	for(var/i in 1 to length(message))
-		if(findtext("ABCDEFGHIJKLMNOPWRSTUVWXYZabcdefghijklmnopqrstuvwxyz", message[i])) //Im open to suggestions
-			new_message += message[i] + message[i] + message[i] //aaalllsssooo ooopppeeennn tttooo sssuuuggggggeeessstttiiiooonsss
+	for(var/i in 1 to length_char(message)) // MODULAR EDIT
+		if(findtext("ABCDEFGHIJKLMNOPWRSTUVWXYZabcdefghijklmnopqrstuvwxyz", copytext_char(message, i, i + 1))) //Im open to suggestions // MODULAR EDIT
+			new_message += copytext_char(message, i, i + 1) + copytext_char(message, i, i + 1) + copytext_char(message, i, i + 1) //aaalllsssooo ooopppeeennn tttooo sssuuuggggggeeessstttiiiooonsss // MODULAR EDIT
 		else
-			new_message += message[i]
+			new_message += copytext_char(message, i, i + 1) // MODULAR EDIT
 	speech_args[SPEECH_MESSAGE] = new_message
 
 /obj/item/organ/tongue/ethereal
