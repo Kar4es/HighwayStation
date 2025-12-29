@@ -1,8 +1,8 @@
 /datum/personality/gambler
 	savefile_key = "gambler"
-	name = "Gambler"
-	desc = "Throwing the dice is always worth it!"
-	pos_gameplay_desc = "Likes gambling and card games, and content with losing when gambling"
+	name = "Лудоман"
+	desc = "Додеп и по пивку"
+	pos_gameplay_desc = "Любит азартные игры, а так же игры где можно проиграть"
 
 /datum/personality/slacking
 	/// Areas which are considered "slacking off"
@@ -38,18 +38,18 @@
 
 /datum/personality/slacking/lazy
 	savefile_key = "lazy"
-	name = "Lazy"
-	desc = "I don't really feel like working today."
-	pos_gameplay_desc = "Happy in the bar or recreation areas"
+	name = "Ленивый"
+	desc = "Сегодня нет настроения работать"
+	pos_gameplay_desc = "Рад провести время в баре или зонах отдыха"
 	mood_event_type = /datum/mood_event/slacking_off_lazy
 	groups = list(PERSONALITY_GROUP_RECREATION, PERSONALITY_GROUP_WORK, PERSONALITY_GROUP_ATHLETICS)
 
 /datum/personality/slacking/diligent
 	savefile_key = "diligent"
-	name = "Diligent"
-	desc = "Things need to get done around here!"
-	pos_gameplay_desc = "Happy when in their department"
-	neg_gameplay_desc = "Unhappy when slacking off in the bar or recreation areas"
+	name = "Добросовестный"
+	desc = "Здесь тоже нужно доделать!"
+	pos_gameplay_desc = "Счастлив находясь в своем отделе"
+	neg_gameplay_desc = "Недоволен, когда бездельничает в баре или зонах отдыха"
 	mood_event_type = /datum/mood_event/slacking_off_diligent
 	groups = list(PERSONALITY_GROUP_RECREATION)
 
@@ -73,37 +73,37 @@
 
 /datum/personality/industrious
 	savefile_key = "industrious"
-	name = "Industrious"
-	desc = "Everyone needs to be working - otherwise we're all wasting our time."
-	neg_gameplay_desc = "Dislikes playing games"
+	name = "Трудолюбивый"
+	desc = "Все должны работать - иначе мы просто теряем время."
+	neg_gameplay_desc = "Не любит играть в игры"
 	groups = list(PERSONALITY_GROUP_WORK)
 
 /datum/personality/athletic
 	savefile_key = "athletic"
-	name = "Athletic"
-	desc = "Can't just sit around all day! Have to keep moving."
-	pos_gameplay_desc = "Likes exercising"
-	neg_gameplay_desc = "Dislikes being lazy"
+	name = "Атлетичный"
+	desc = "Движение - жизнь!"
+	pos_gameplay_desc = "Любит спорт"
+	neg_gameplay_desc = "Не любит лениться"
 	groups = list(PERSONALITY_GROUP_ATHLETICS)
 
 /datum/personality/erudite
 	savefile_key = "erudite"
-	name = "Erudite"
-	desc = "Knowledge is power. Especially this deep in space."
-	pos_gameplay_desc = "Likes reading books"
+	name = "Эрудит"
+	desc = "Знание - сила. Особенно в глубоком космосе."
+	pos_gameplay_desc = "Любит читать книги"
 	groups = list(PERSONALITY_GROUP_READING)
 
 /datum/personality/uneducated
 	savefile_key = "uneducated"
-	name = "Uneducated"
-	desc = "I don't care much for books - I already know everything I need to know."
-	neg_gameplay_desc = "Dislikes reading books"
+	name = "Необразованный"
+	desc = "Меня не волнуют книги - я и так все знаю"
+	neg_gameplay_desc = "Не любит читать книги"
 	groups = list(PERSONALITY_GROUP_READING)
 
 /datum/personality/spiritual
 	savefile_key = "spiritual"
-	name = "Spiritual"
-	desc = "I believe in a higher power."
-	pos_gameplay_desc = "Likes the Chapel and the Chaplain, and has special prayers"
-	neg_gameplay_desc = "Dislikes unholy things"
+	name = "Просветлённый"
+	desc = "Я верю в высшие силы"
+	pos_gameplay_desc = "Нравится церковь и священник. Молится особым образом."
+	neg_gameplay_desc = "Не любит нечисть"
 	personality_trait = TRAIT_SPIRITUAL

@@ -1,27 +1,27 @@
 /datum/personality/introvert
 	savefile_key = "introvert"
-	name = "Introverted"
-	desc = "I prefer to be alone, reading or painting in the library."
-	pos_gameplay_desc = "Likes being in the library"
-	// neg_gameplay_desc = "Dislikes large groups"
+	name = "Интроверт"
+	desc = "Предпочту почитать в библиотеке."
+	pos_gameplay_desc = "Любит находится в библиотеке"
+	neg_gameplay_desc = "Не любит большие группы" // почему то было закомментировано
 	personality_trait = TRAIT_INTROVERT
 	groups = list(PERSONALITY_GROUP_INTERACTION)
 
 /datum/personality/extrovert
 	savefile_key = "extrovert"
-	name = "Extroverted"
-	desc = "I prefer to be surrounded by people, having a drink at the Bar."
-	pos_gameplay_desc = "Likes being in the bar"
-	// neg_gameplay_desc = "Dislikes being alone"
+	name = "экстраверт"
+	desc = "Предпочту выпить пару стопок в окружении людей"
+	pos_gameplay_desc = "Любит находится в баре"
+	neg_gameplay_desc = "Не любит быть в одиночестве" // почему то было закомментировано
 	personality_trait = TRAIT_EXTROVERT
 	groups = list(PERSONALITY_GROUP_INTERACTION, PERSONALITY_GROUP_OTHERS)
 
 /datum/personality/paranoid
 	savefile_key = "paranoid"
-	name = "Paranoid"
-	desc = "Everyone and everything is out to get me! This place is a deathtrap!"
-	pos_gameplay_desc = "Likes being alone or in moderately-sized groups"
-	neg_gameplay_desc = "Stressed when with one other person, or in large groups"
+	name = "Параноик"
+	desc = "Тут все пытаются меня убить! За каждым углом ловушка!"
+	pos_gameplay_desc = "Предпочитает одиночество или быть в средних группах"
+	neg_gameplay_desc = "Испытывает стресс при общении с одним человеком или в большой группе"
 	processes = TRUE
 	groups = list(PERSONALITY_GROUP_PEOPLE_FEAR)
 
