@@ -75,7 +75,7 @@
 
 /datum/personality/pessimistic
 	savefile_key = "pessimistic"
-	name = "Пессиместичный"
+	name = "Пессимистичный"
 	desc = "Я думаю, что худшее еще впереди."
 	neg_gameplay_desc = "Позитивные эмоции проходят быстрее"
 	groups = list(PERSONALITY_GROUP_HOPE)
