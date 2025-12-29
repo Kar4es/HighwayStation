@@ -62,5 +62,5 @@
 	savefile_key = "aromantic"
 	name = "Аромантичный"
 	desc = "На станции нет места романтике."
-	neg_gameplay_desc = "Не любит поцелую и объятия"
+	neg_gameplay_desc = "Не любит поцелуи и объятия"
 	personality_trait = TRAIT_BADTOUCH

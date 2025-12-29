@@ -26,7 +26,7 @@
 /datum/personality/nt/loyalist
 	savefile_key = "loyalist"
 	name = "Лояльный"
-	desc = "Я верю в эту станицию и центральное командование до самого конца!"
+	desc = "Я верю в эту станцию и центральное командование до самого конца!"
 	pos_gameplay_desc = "Любит плакаты компании и вывески"
 	mood_event_type = /datum/mood_event/nt_loyalist
 
@@ -34,5 +34,5 @@
 	savefile_key = "disillusioned"
 	name = "Разочарованный"
 	desc = "Нанотрейзен уже не тот. Я на это не подписывался"
-	neg_gameplay_desc = "не любит плакаты компании и вывески"
+	neg_gameplay_desc = "Не любит плакаты компании и вывески"
 	mood_event_type = /datum/mood_event/nt_disillusioned

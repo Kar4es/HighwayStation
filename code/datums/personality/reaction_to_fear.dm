@@ -2,7 +2,7 @@
 	savefile_key = "brave"
 	name = "Храбрый"
 	desc = "Небольшое количество крови меня не пугает."
-	pos_gameplay_desc = "Страх накапливается медленее, связанные с этим эмоции слабее"
+	pos_gameplay_desc = "Страх накапливается медленнее, связанные с этим эмоции слабее"
 	groups = list(PERSONALITY_GROUP_GENERAL_FEAR, PERSONALITY_GROUP_PEOPLE_FEAR)
 
 /datum/personality/cowardly

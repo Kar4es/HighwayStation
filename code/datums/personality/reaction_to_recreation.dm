@@ -1,7 +1,7 @@
 /datum/personality/gambler
 	savefile_key = "gambler"
 	name = "Лудоман"
-	desc = "Додеп и по пивку"
+	desc = "Бросить две кости лучше, чем одну"
 	pos_gameplay_desc = "Любит азартные игры, а так же игры где можно проиграть"
 
 /datum/personality/slacking
@@ -48,7 +48,7 @@
 	savefile_key = "diligent"
 	name = "Добросовестный"
 	desc = "Здесь тоже нужно доделать!"
-	pos_gameplay_desc = "Счастлив находясь в своем отделе"
+	pos_gameplay_desc = "Счастлив находиться в своем отделе"
 	neg_gameplay_desc = "Недоволен, когда бездельничает в баре или зонах отдыха"
 	mood_event_type = /datum/mood_event/slacking_off_diligent
 	groups = list(PERSONALITY_GROUP_RECREATION)

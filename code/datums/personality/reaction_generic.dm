@@ -1,7 +1,7 @@
 /datum/personality/apathetic
 	savefile_key = "apathetic"
 	name = "Апатичный"
-	desc = "Меня мало что волнует. Ни плохое, ни хорошее, и уж точно не ужастное."
+	desc = "Меня мало что волнует. Ни плохое, ни хорошее, и уж точно не ужасное."
 	neut_gameplay_desc = "Все эмоции влияют на вас слабее"
 	groups = list(PERSONALITY_GROUP_MOOD_POWER)
 
@@ -97,6 +97,6 @@
 /datum/personality/snob
 	savefile_key = "snob"
 	name = "Сноб"
-	desc = "Я ожидаю только лучшего. Всё что хуже - неприемлимо!"
+	desc = "Я ожидаю только лучшего. Всё что хуже - неприемлемо!"
 	neut_gameplay_desc = "Качество помещения влияет на ваше настроение"
 	personality_trait = TRAIT_SNOB

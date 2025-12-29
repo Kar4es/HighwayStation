@@ -2,7 +2,7 @@
 	savefile_key = "animal_friend"
 	name = "Друг животных"
 	desc = "Люблю животных! Так бы и тискал их!"
-	pos_gameplay_desc = "Любит находится рядом с животными"
+	pos_gameplay_desc = "Любит находиться рядом с животными"
 	neg_gameplay_desc = "Смерть животных влияет на ваше настроение сильнее"
 	groups = list(PERSONALITY_GROUP_ANIMALS)
 

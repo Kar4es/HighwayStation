@@ -9,7 +9,7 @@
 
 /datum/personality/extrovert
 	savefile_key = "extrovert"
-	name = "экстраверт"
+	name = "Экстраверт"
 	desc = "Предпочту выпить пару стопок в окружении людей"
 	pos_gameplay_desc = "Любит находится в баре"
 	neg_gameplay_desc = "Не любит быть в одиночестве" // почему то было закомментировано
