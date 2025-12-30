@@ -1,9 +1,9 @@
 /datum/quirk/heterochromatic
-	name = "Heterochromatic"
+	name = "Гетерохромия"
 	desc = "Один ваш глаз отличается по цвету от второго!"
 	icon = FA_ICON_EYE_LOW_VISION // Ignore the icon name, its actually a fairly good representation of different color eyes
 	quirk_flags = QUIRK_HUMAN_ONLY|QUIRK_CHANGES_APPEARANCE
-	medical_record_text = "Радужные оболочки пациента разного цвета."
+	medical_record_text = "У пациента наблюдается гетерохромия радужной оболочки."
 	value = 0
 	mail_goodies = list(/obj/item/clothing/glasses/eyepatch)
 
