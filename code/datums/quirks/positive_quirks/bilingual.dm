@@ -1,5 +1,5 @@
 /datum/quirk/bilingual
-	name = "Bilingual"
+	name = "Полиглот"
 	desc = "За эти годы вы освоили еще один язык!"
 	icon = FA_ICON_GLOBE
 	value = 4
