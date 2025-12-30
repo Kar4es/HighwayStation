@@ -1,5 +1,5 @@
 /datum/quirk/item_quirk/allergic
-	name = "Extreme Medicine Allergy"
+	name = "Тяжёлая лекарственная аллергия"
 	desc = "С самого детства у вас была аллергия на некоторые химические вещества..."
 	icon = FA_ICON_PRESCRIPTION_BOTTLE
 	value = -6
@@ -43,7 +43,7 @@
 	var/mob/living/carbon/human/human_holder = quirk_holder
 	var/obj/item/clothing/accessory/dogtag/allergy/dogtag = new(get_turf(human_holder), allergy_string)
 
-	give_item_to_holder(dogtag, list(LOCATION_BACKPACK, LOCATION_HANDS), flavour_text = "Make sure medical staff can see this...", notify_player = TRUE)
+	give_item_to_holder(dogtag, list(LOCATION_BACKPACK, LOCATION_HANDS), flavour_text = "Убедитесь что медики могут это увидеть...", notify_player = TRUE)
 
 /datum/quirk/item_quirk/allergic/remove()
 	UnregisterSignal(quirk_holder, COMSIG_MOB_REAGENT_TICK)

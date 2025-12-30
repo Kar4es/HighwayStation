@@ -1,5 +1,5 @@
 /datum/quirk/poor_aim
-	name = "Stormtrooper Aim"
+	name = "Меткость штурмовика"
 	desc = "На конкурсе лучшего стрелка вы всегда занимали первое место... с конца."
 	icon = FA_ICON_BULLSEYE
 	value = -4

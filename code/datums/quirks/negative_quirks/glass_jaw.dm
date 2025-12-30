@@ -1,11 +1,11 @@
 /datum/quirk/glass_jaw
-	name = "Glass Jaw"
+	name = "Стеклянная челюсть"
 	desc = "У вас очень хрупкая челюсть. Любой достаточно сильный удар по голове может лишить вас сознания."
 	icon = FA_ICON_HAND_FIST
 	value = -4
 	gain_text = span_danger("Ваша челюсть кажется расшатанной.")
 	lose_text = span_notice("Ваша челюсть, кажется, вновь встала на место.")
-	medical_record_text = "Пациента абсурдно легко вырубить. Не подпускайте его к боксерскому рингу."
+	medical_record_text = "Пациент обладает аномально низким болевым порогом и устойчивостью челюсти к ударам. Противопоказаны контактные виды спорта."
 	hardcore_value = 4
 	mail_goodies = list(
 		/obj/item/clothing/gloves/boxing,

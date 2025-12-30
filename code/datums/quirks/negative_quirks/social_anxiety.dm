@@ -1,9 +1,9 @@
 /datum/quirk/social_anxiety
-	name = "Social Anxiety"
+	name = "Социофобия"
 	desc = "Вам очень трудно разговаривать с людьми, заикаясь или даже запираясь в себе."
 	icon = FA_ICON_COMMENT_SLASH
 	value = -3
-	gain_text = span_danger("Вы начинаете беспокоиться о том, что говорите.")
+	gain_text = span_danger("Вы начинаете панически анализировать каждое своё слово.")
 	lose_text = span_notice("Вам снова легко разговаривать.") //if only it were that easy!
 	medical_record_text = "Пациент обычно испытывает тревогу при социальных контактах и предпочитает их избегать."
 	hardcore_value = 4
